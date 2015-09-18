@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="DataEntity.Admin" assembly="DataEntity">
+  <class name="DepartmentEntity" table="[dbo].[Department]" >
+    <id name="DeptNo" column="[DeptNo]" type="String" length="20" >
+      <generator class="assigned" />
+    </id>
+    <property name="DeptName" column="DeptName" type="String" not-null="false" length="50"/>
+    <property name="DeptDescription" column="DeptDescription" type="String" not-null="false" length="100"/>
+  </class>
+</hibernate-mapping>

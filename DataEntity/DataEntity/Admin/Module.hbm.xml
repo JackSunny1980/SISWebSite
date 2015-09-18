@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="DataEntity.Admin" assembly="DataEntity">
+    <class name="ModuleEntity" table="[dbo].[Module]" >
+        <id name="ModuleNo" column="[ModuleNo]" type="AnsiString" length="20" >
+            <generator class="assigned" />
+        </id>
+        <property name="ModuleName" column="[ModuleName]" type="AnsiString" not-null="true" length="100" /> 
+        <property name="ParentModuleNo" column="[ParentModuleNo]" type="AnsiString" not-null="true" length="20" /> 
+        <property name="ModuleIcon" column="[ModuleIcon]" type="AnsiString" not-null="true" length="100" /> 
+        <property name="URL" column="[URL]" type="AnsiString" not-null="true" length="120" /> 
+        <property name="Description" column="[ModuleDescription]" type="AnsiString" not-null="false" length="200" /> 
+        <property name="OrderNo" column="[OrderNo]" type="Int32" not-null="false" /> 
+    </class>
+</hibernate-mapping>
+

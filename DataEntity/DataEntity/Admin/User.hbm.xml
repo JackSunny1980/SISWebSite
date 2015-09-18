@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="DataEntity.Admin" assembly="DataEntity">
+    <class name="UserEntity" table="[dbo].[Employees]" >
+        <id name="PkId" column="[PK_ID]" type="String" length="50" >
+            <generator class="assigned" />
+        </id>
+        <property name="UserID" column="[USER_ID]" type="String" not-null="false" length="256" /> 
+        <property name="Password" column="[PASSWORD]" type="String" not-null="false" length="256" /> 
+        <property name="OrgCode" column="[ORG_CODE]" type="String" not-null="false" length="256" /> 
+        <property name="OrgName" column="[ORG_NAME]" type="String" not-null="false" length="256" /> 
+        <property name="DepartmentNum" column="[DEPARTMENT_NUM]" type="String" not-null="false" length="256" /> 
+        <property name="DepartmentName" column="[DEPARTMENT_NAME]" type="String" not-null="false" length="256" /> 
+        <property name="Mail" column="[MAIL]" type="String" not-null="false" length="256" /> 
+        <property name="Mobile" column="[MOBILE]" type="String" not-null="false" length="256" /> 
+        <property name="Telephone" column="[TELEPHONE]" type="String" not-null="false" length="256" /> 
+        <property name="Status" column="[USER_STATUS]" type="String" not-null="false" length="256" /> 
+        <property name="Usesystem" column="[USESYSTEM]" type="String" not-null="false" length="256" /> 
+        <property name="Usefunction" column="[USEFUNCTION]" type="String" not-null="false" length="256" /> 
+        <property name="FirstName" column="[FIRST_NAME]" type="String" not-null="false" length="256" /> 
+        <property name="LastName" column="[LAST_NAME]" type="String" not-null="false" length="256" /> 
+        <property name="Sex" column="[SEX]" type="String" not-null="false" length="256" /> 
+        <property name="UserType" column="[USER_TYPE]" type="String" not-null="false" length="256" /> 
+        <property name="DisplayIndex" column="[DISPLAY_INDEX]" type="Decimal" not-null="false" /> 
+        <property name="Pid" column="[PID]" type="String" not-null="false" length="256" /> 
+        <property name="PassportId" column="[PASSPORT_ID]" type="String" not-null="false" length="256" /> 
+        <property name="EmpNumber" column="[EMP_NUMBER]" type="String" not-null="false" length="256" /> 
+        <property name="Title" column="[TITLE]" type="String" not-null="false" length="256" /> 
+        <property name="TitleName" column="[TITLE_NAME]" type="String" not-null="false" length="256" /> 
+        <property name="IsBywork" column="[IS_BYWORK]" type="String" not-null="false" length="256" /> 
+        <property name="Extensions" column="[EXTENSIONS]" type="String" not-null="false" length="256" /> 
+        <property name="DelFlag" column="[DEL_FLAG]" type="String" not-null="false" length="8" /> 
+        <property name="PasswordKey" column="[PASSWORD_KEY]" type="String" not-null="false" length="50" /> 
+    </class>
+</hibernate-mapping>
+
